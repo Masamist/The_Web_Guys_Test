@@ -13,10 +13,20 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+
+    // "rootDir": "src",
+    // "forceConsistentCasingInFileNames": true,
+    // "noImplicitReturns": true,
+    // "noImplicitThis": true,
+    // "noImplicitAny": true,
+    // "strictNullChecks": true,
+    // "suppressImplicitAnyIndexErrors": true,
+    // "noUnusedLocals": true,
+
     "paths": {
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/home/aboutWassp.js"],
   "exclude": ["node_modules"]
 }
