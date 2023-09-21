@@ -1,0 +1,9 @@
+/* Testimonials */
+.testimonials_bg {
+  /* background-image: radial-gradient(rgba(0,124,203, 10%), rgba(5, 36, 54, 50%),rgba(0, 10, 28, 100%)); */
+  background-position: bottom right;
+  padding: 10rem 2rem 2rem 2rem;
+  background-size: cover;
+  width: 100%;
+  color: white;
+}

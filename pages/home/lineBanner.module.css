@@ -1,0 +1,76 @@
+/* Line Banner */
+.line_banner_container {
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+.scroll_m_container {
+  overflow: hidden;
+  height: 100%;
+  white-space: nowrap;
+  animation: scrollText 35s infinite linear;
+  margin: 0;
+  font-size: 0;
+  justify-content: space-between;
+  width: fit-content;
+  padding: 3.6rem 0;
+}
+.scroll_m_container > span {
+  display: inline-block;
+}
+/* .scroll_container {
+  flex: 0 -5rem auto;
+} */
+
+.brand_logo_container_hemisphere{
+  border-radius: 50px;
+  display: inline-flex;
+  margin: 0 2rem;
+  cursor: pointer;
+  border: 1px solid #fff;
+  background-image: url('/images/Hemisphere.svg');
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 7.5rem;
+  height: 2.5rem;
+}
+.brand_logo_container_seabots{
+  border-radius: 50px;
+  display: inline-flex;
+  margin: 0 2rem;
+  cursor: pointer;
+  border: 1px solid #fff;
+  background-image: url('/images/Seabots.svg');
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 7.5rem;
+  height: 2.5rem;
+  display: inline-block;
+}
+
+.brand_logo_container_sbgsystems{
+  border-radius: 50px;
+  display: inline-flex;
+  margin: 0 2rem;
+  cursor: pointer;
+  border: 1px solid #fff;
+  background-image: url('/images/SbgSystems.svg');
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 7.5rem;
+  height: 2.5rem;
+  display: inline-block;
+}
+@keyframes scrollText {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

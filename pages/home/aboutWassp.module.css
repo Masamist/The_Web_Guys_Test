@@ -1,0 +1,22 @@
+.about_bg {
+  margin-top: 60rem;
+  /* background-color: rgba(0, 10, 28, 100%); */
+  background-image:
+  /* linear-gradient(to bottom, rgba(0, 0, 0, 10%), rgba(5, 33, 51, 100%)), */
+  url('../../public/images/Layers.svg');
+  background-position: top -18rem left;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  width: 100%;
+  color: white;
+}
+@media (max-width: 700px) {
+  .about_bg {
+    margin-top: 65rem;
+    background-position: top -12rem left;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    color: white;
+  }
+}
