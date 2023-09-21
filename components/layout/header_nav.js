@@ -2,7 +2,6 @@ import Image from 'next/image'
 import React, { useState } from 'react'
 
 // styles and Material UI
-import Container from '@mui/material/Container'
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Box from '@mui/material/Box'

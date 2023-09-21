@@ -58,16 +58,14 @@ function Footer() {
           </Grid>
         </Grid>
       </Grid>
-      <Box sx={{width: "100%", fontSize: "100%",}}>
         <Typography 
           variant='h1'
           align='center'
           pb={7}
-          sx={{fontSize: "13vw", color: "rgb(1, 15, 51)",}}
+          sx={{ color: "rgb(1, 15, 51)"}}
           >
             WASSP MULTIBEAM
         </Typography>
-      </Box>  
   </footer>
   );
 }

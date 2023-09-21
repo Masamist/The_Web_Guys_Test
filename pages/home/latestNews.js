@@ -1,6 +1,7 @@
+import React, { useState, useEffect } from 'react'
 // styles & custom components
-import styles from '@/pages/home/fSeries.module.css'
 import CardNews from '../../components/ui/cardNews'
+import styles from '../home/latestNews.module.css'
 
 // Material UI
 import Typography from '@mui/material/Typography'
@@ -26,17 +27,39 @@ const LatestNews = () => {
     {
       "key": 4,
       "title": "Namibia’s kelp utilizes WASSP for marine industry surveys",
-      "url": "images/05.jpg",
+      "url": "images/06.jpg",
     },
   ]
+
+  const [newsOder, setNewsOder]= useState([1, 2, 3, 4])
+  const [currentNews, setCurrentNews] = useState(news)
+
+  const handleClick = () => {
+    const nums = []
+    for(let i =0; i < newsOder.length; i++){    
+      nums.push(newsOder[i] < 4 ? newsOder[i] + 1 : 1)
+      
+    }
+    setNewsOder(nums)
+
+    let arrangeOder=[]
+    for(let i = 0; i < newsOder.length; i++){
+      let nItem = news.find((item) => item.key === newsOder[i])
+      console.log(nItem)
+      arrangeOder.push(nItem)
+    }
+    setCurrentNews(arrangeOder)
+    console.log(currentNews)
+    console.log(news)
+  }
+
   return(
-    <div className={styles.news_bg}>
+    <div>
       <Grid 
         container
         wrap='nowrap'
         pl={6} 
         pb={36}
-        // sx={{ overflow: "auto", overflowY: "auto", overflowX: "hidden", }}
       >
         {/* <Grid item xs={2} md={1.1}> */}
         <Grid item sx={{ minWidth: '9.5%' }}>
@@ -46,15 +69,16 @@ const LatestNews = () => {
         {/* <Grid item xs={2} md={3.2}> */}
           <Typography variant='h6'>LATEST NEWS</Typography>
         </Grid>
-              {/* news cards */}
-          {news.map((singleNews) => (
-            <Grid item mr={2} key={singleNews.key} >
+
+        {/* <NewsCars /> */}
+        { currentNews.map((singleNews) => (
+          <Grid item mr={2} key={singleNews.key} onClick={handleClick}>
+            <div className={styles.slide_left}>
               <CardNews title={singleNews.title} url={singleNews.url} />
-
-            </Grid>
-            ) )}
-           
-
+            </div>   
+          
+          </Grid>
+        ))}
       </Grid>
     </div>
   )

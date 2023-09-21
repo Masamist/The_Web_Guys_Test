@@ -1,0 +1,42 @@
+/***** Slide Left *****/
+.slide_left {
+  animation: 3s slide-left;
+}
+@keyframes slide_left {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+/* **** Misc Styles ****
+.container {
+  width: 500px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 25px #000;
+  margin-top: 30px;
+  border: 1px solid #444;  
+  text-align: center;
+}
+body {
+  background: #e2e2e2;
+} */
+
+/***** FadeIn Underline *****/
+
+.fade-in {
+  animation: fadeIn ease 3s;
+}
+@keyframes fadeIn{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}

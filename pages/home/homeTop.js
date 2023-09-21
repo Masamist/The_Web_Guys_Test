@@ -1,5 +1,5 @@
 // styles & custom components
-import styles from '@/pages/home/features.module.css'
+import styles from '@/pages/home/homeTop.module.css'
 
 import OutlineButtonArrow from '@/components/ui/outlineButtonArrow'
 
