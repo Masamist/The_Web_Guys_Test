@@ -6,3 +6,7 @@
   background-size: 38rem;
   padding: 0;
 }
+.activeButton {
+  background-color: #fff;
+  color: rgba(5, 36, 54, 1);
+}

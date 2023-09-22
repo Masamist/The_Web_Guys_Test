@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { animated, useSpring, config } from '@react-spring/web'
+import { animated, useSpring, easings } from '@react-spring/web'
 import { Waypoint } from 'react-waypoint'
 
 // styles & custom components
@@ -16,8 +16,13 @@ const FSeries = () => {
   const [visible, toggle] = useState<boolean>(false)
   const animation = useSpring({
     opacity: visible ? 1 : 0,
-    y: visible ? 0 : 40,
-    config: config.slow
+    y: visible ? 0 : -70,
+    config: {
+      mass: 100,
+      tension: 280, 
+      friction: 50, 
+      easings: easings.easeInQuart 
+    }
   })
 
   return(

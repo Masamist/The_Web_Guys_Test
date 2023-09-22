@@ -1,0 +1,23 @@
+.oButton{
+  background-color: inherit;
+  border: 1 solid #fff;
+  color: #fff;
+  font-family: 'neue-haas-grotesk-display';
+  font-weight: 200;
+  font-size: 1.4rem;
+  padding: 1rem 3rem 1rem 6rem;
+  text-decoration: none;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+  box-shadow: #fff;
+  border-radius: 3rem;
+  cursor: pointer;
+}
+.oButton:hover{
+  opacity:.4;
+  box-shadow: none;
+}
+.oButton:active{
+  background-color: #fff;
+  opacity:.8;
+}
