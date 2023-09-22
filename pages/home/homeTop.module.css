@@ -6,7 +6,7 @@
   background-position: right 30% top;
   background-repeat: no-repeat;
   width: 100%;
-  min-height: 210vh;
+  height:80rem;
   background-size: cover;
   color: white;
   position: absolute;
@@ -15,17 +15,48 @@
   z-index: -1;
 }
 
+@media (max-width: 1200px) {
+  .hometop_bg {
+    background-image:
+  linear-gradient(to bottom, rgba(0, 0, 0, 20%), rgba(5, 36, 54, 100%)),
+  url('../../public/images/01.jpg');
+  background-position: right 30% top;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 210vh;
+  background-size: cover;
+  color: white;
+  position: absolute;
+  left:0;
+  top:0;
+  z-index: -1;
+  }
+}
+
 @media (max-width: 700px) {
   .hometop_bg {
     background-position: right 30% top;
     background-repeat: no-repeat;
     width: 100%;
-    height: 150vh;
+    height: 200vh;
     /* background-size: cover; */
     color: white;
     position: absolute;
     left:0;
     top:0;
-    z-index: -1;
   }
+}
+.br_visivility_a{
+  display: "none"
+}
+.br_visivility_b{
+  display: "inline"
+}
+@media (max-width: 500px) {
+  .br_visivility_a{
+    display: "inline"
+  }
+  .br_visivility_b{
+    display: "none"
+ }
 }

@@ -31,16 +31,6 @@
 } */
 
 
-
-@keyframes scrollText {
-  from {
-    transform: translateX(0%);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
-
 /* .main_images_container div::before{
   background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(5, 36, 54, 1) 100%);
   margin: 0 1rem;
@@ -74,12 +64,3 @@
   background-color: rgba(0, 10, 28, 100%);
 }
 
-/* Mobile */
-@media (max-width: 700px) {
-
-}
-
-/* Tablet and Smaller Desktop */
-@media (min-width: 701px) and (max-width: 1120px) {
-
-}

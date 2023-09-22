@@ -53,9 +53,7 @@ const Features = () => {
       "text": "Lorem ipsum dolor sit amet consectetur. Arcu commodo nibh elementum facilisis tellus. Sit malesuada volutpat ut eget. Quis purus commodo enim auctor libero malesuada. Ornare facilisis pharetra tortor mi ac elementum leo sed mi. Quis dui proin mi ipsum enim.",
     },
   ]
-
-
-
+  
   const [article, setArticle] = useState([]);
 
   useEffect(() => {
@@ -74,7 +72,7 @@ const Features = () => {
     return(
       <Box key={article.title}>
         <Typography variant='body1' pt={3.5} pb={4.5} sx={{ fontSize: 38}}>{"0" + article.id}</Typography>
-        <Typography variant='h3' pb={2}>{article.title}</Typography>
+        <Typography variant='h3' pb={2} sx={{ fontSize: { xs:'2.8rem', md: '4rem', xl:'5rem'}}}>{article.title}</Typography>
         <Typography variant='body1' sx={{ paddingRight:{ xs: 3, md: 10, xl: 30 }}}>{article.text}
         </Typography>
       </Box>
@@ -82,20 +80,23 @@ const Features = () => {
   }
   
     return ( 
-      <div className={styles.transducer_bg}>
+      <div className={styles.feature_bg}>
         <Grid container pt={40} pl={6} pb={55}>
-          <Grid item md={1.1}>
+          <Grid item xs={2} md={1.1}>
             <Typography variant='h6'>03</Typography>
           </Grid>
-          <Grid item md={3.4}>
+          <Grid item md={10} xl={3.3} sx={{ paddingBottom: {md: '3rem', xl:'0'}}}>
             <Typography variant='h6'>features</Typography>
           </Grid>
-          <Grid item md={7} >
-              {list.map((item) => (
-                <OutlineButton key={item.id} onClick={(e) => handleClick(e, item.id)}>
-                  <Typography variant='h6' pr={2}>{"0" + item.id.toString()}</Typography>
-                  {item.title}</OutlineButton>
-              ))}
+          <Grid item md={7}>
+
+          {/* The button shoud be horizontally lined when it is xs !!!!!!!!!!!!!!! */}
+
+            {list.map((item) => (
+              <OutlineButton key={item.id} onClick={(e) => handleClick(e, item.id)}>
+                <Typography variant='h6' pr={2}>{"0" + item.id.toString()}</Typography>
+                {item.title}</OutlineButton>
+            ))}
             <Articles />
           </Grid>
         </Grid>
