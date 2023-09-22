@@ -1,5 +1,5 @@
 // styles & custom components
-import styles from '@/styles/Home.module.css'
+import styles from './footer.module.css'
 import OutlineButtonArrow from '../ui/outlineButtonArrow'
 
 // Material UI
@@ -19,7 +19,7 @@ function Footer() {
   return (
     <footer className={styles.footer_container}>
       <Grid container pt={36} pl={6} pb={10}>
-        <Grid item md={7.8}>
+        <Grid item xs={12} md={5.6} xl={7.8} >
           <Typography variant='h5' pb={10}>Dui duis facilisis id et ullamcorper<br /> diam est. Vulputate ac magna in id.</Typography>
           <OutlineButtonArrow>Contact</OutlineButtonArrow>
           <Button 
@@ -28,11 +28,12 @@ function Footer() {
               textDecoration: 'underline',
               textDecorationThickness: 1,
               display:'block',
-              paddingTop: 15,
+              paddingTop: { xs: 7, md: 15},
+              paddingBottom: { xs: 7, md: 15},
             }}>
             Subscribe to our newsletter</Button>
         </Grid>
-        <Grid item md={2.7}>
+        <Grid item xs={4} md={3.4} xl={2.7}>
           <Box pb={3.5}>
             {footerNav.map((navlink) => (
               <Typography key={navlink} variant="body1" color="#fff" pb={1.8}>{navlink}</Typography>
@@ -45,7 +46,7 @@ function Footer() {
           </Box>            
         </Grid>
 
-        <Grid item md={1.1}>
+        <Grid item md={2} xl={1.1}>
           <Grid container direction="column" justifyContent="space-between">
             <Grid item sx={{ hight: 50}}>
               {locations.map((location) => (
@@ -58,11 +59,12 @@ function Footer() {
           </Grid>
         </Grid>
       </Grid>
+      {/* Bug Here!!! Font size does not change */}
         <Typography 
           variant='h1'
           align='center'
-          pb={7}
-          sx={{ color: "rgb(1, 15, 51)"}}
+          pb={3}
+          sx={{ fontSize: { xs:"6rem", md:"8rem", xl:"12rem" }, color: "rgb(1, 15, 51)"}}
           >
             WASSP MULTIBEAM
         </Typography>

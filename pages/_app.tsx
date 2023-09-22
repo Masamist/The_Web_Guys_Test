@@ -32,9 +32,9 @@ const theme = createTheme({
       },
     },
     h2:{
-      fontSize: '4.2rem',
+      fontSize: '3.1rem',
       '@media (min-width:900px)': {
-        fontSize: '4.5rem',
+        fontSize: '4.2rem',
       },
       '@media (min-width:1200px)': {
         fontSize: '5.8rem',

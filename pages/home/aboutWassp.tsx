@@ -42,7 +42,7 @@ const AboutWassp = () => {
           <Grid item xs={12} md={9}>
             <Typography 
               variant='h2' 
-              sx={{ fontSize: { xs: '3.1rem', md: '4.2rem' }, paddingBottom: { xs: 2.5, md: 6 }}}>
+              sx={{ paddingBottom: { xs: 2.5, md: 6 }}}>
               welcome to the world of<br />wassp multibeam
             </Typography>
           </Grid>

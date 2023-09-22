@@ -82,10 +82,10 @@ const Features = () => {
     return ( 
       <div className={styles.feature_bg}>
         <Grid container pt={40} pl={6} pb={55}>
-          <Grid item xs={2} md={1.1}>
+          <Grid item xs={2} md={1.1} sx={{ paddingBottom: {xs: '3rem', md:'5', xl:'0'}}}>
             <Typography variant='h6'>03</Typography>
           </Grid>
-          <Grid item md={10} xl={3.3} sx={{ paddingBottom: {md: '3rem', xl:'0'}}}>
+          <Grid item xs={8} md={3.3}>
             <Typography variant='h6'>features</Typography>
           </Grid>
           <Grid item md={7}>

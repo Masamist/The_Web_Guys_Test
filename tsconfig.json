@@ -27,6 +27,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/home/aboutWassp.js", "pages/home/features.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/home/aboutWassp.js", "pages/home/features.js", "pages/home/latestNews.js"],
   "exclude": ["node_modules"]
 }

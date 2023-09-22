@@ -65,7 +65,7 @@ const LatestNews = () => {
         <Grid item sx={{ minWidth: '9.5%' }}>
           <Typography variant='h6'>05</Typography>
         </Grid>
-        <Grid item sx={{ minWidth: '28%' }}>
+        <Grid sx={{ minWidth: '28%' }}>
         {/* <Grid item xs={2} md={3.2}> */}
           <Typography variant='h6'>LATEST NEWS</Typography>
         </Grid>
@@ -75,8 +75,7 @@ const LatestNews = () => {
           <Grid item mr={2} key={singleNews.key} onClick={handleClick}>
             <div className={styles.slide_left}>
               <CardNews title={singleNews.title} url={singleNews.url} />
-            </div>   
-          
+            </div>       
           </Grid>
         ))}
       </Grid>

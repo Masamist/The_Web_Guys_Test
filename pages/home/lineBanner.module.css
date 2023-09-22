@@ -19,6 +19,9 @@
 }
 .scroll_m_container > span {
   display: inline-block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 /* .scroll_container {
   flex: 0 -5rem auto;
@@ -49,6 +52,13 @@
 .brand_logo_container_sbgsystems{
   background-image: url('/images/SbgSystems.svg');
 }
+
+@media (max-width: 1200px) {
+  .scroll_m_container {
+    padding: 1.5rem 0;
+  }
+}
+
 @keyframes scrollText {
   from {
     transform: translateX(0%);

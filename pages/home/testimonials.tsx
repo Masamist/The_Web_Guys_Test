@@ -13,7 +13,7 @@ import Grid from '@mui/material/Grid'
 
 const Testimonials = () => {
 
-  const [visible, toggle] = useState<boolean>(false)
+  const [visible, toggle] = useState(false)
   const animation = useSpring({
     opacity: visible ? 1 : 0,
     x: visible ? 0 : -10,
@@ -30,10 +30,10 @@ const Testimonials = () => {
       <Waypoint onEnter={() => toggle(true)} />
       <animated.div style={animation}>     
         <Grid container pt={25} pl={6} pb={40}>
-          <Grid item md={1.1}>
+          <Grid item xs={2} md={1.1}>
             <Typography variant='h6'>04</Typography>
           </Grid>
-          <Grid item md={3.2}>
+          <Grid item xs={8} md={3.3}>
             <Typography variant='h6'>TESTIMONIALS</Typography>
           </Grid>
           <Grid item md={7.5}>
