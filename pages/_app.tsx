@@ -23,15 +23,18 @@ const theme = createTheme({
     fontWeightMedium: 400,
     fontWeightBold: 500,
     h1:{
-      fontSize: '8.1rem',
-      '@media (min-width:700px)': {
-        fontSize: '3.6rem',
+      fontSize: '4.2rem',
+      '@media (min-width:900px)': {
+        fontSize: '6rem',
+      },
+      '@media (min-width:1200px)': {
+        fontSize: '8.1rem',
       },
     },
     h2:{
-      fontSize: '4.2rem',
+      fontSize: '3.1rem',
       '@media (min-width:900px)': {
-        fontSize: '4.5rem',
+        fontSize: '4.2rem',
       },
       '@media (min-width:1200px)': {
         fontSize: '5.8rem',
@@ -60,14 +63,14 @@ const theme = createTheme({
     },
     h5:{
       fontFamily: 'neue-haas-grotesk-display',
-      fontSize: '.8',
+      fontSize: '1.9rem',
       '@media (min-width:800px)': {
-        fontSize: '.9rem',
+        fontSize: '1.5rem',
       },
       '@media (min-width:1200px)': {
-        fontSize: '.8rem',
+        fontSize: '2.2rem',
       },
-      lineHeight: 1.2,
+      lineHeight: 1.1,
     },
     h6:{
       fontSize: '1rem',
@@ -133,6 +136,13 @@ export default function App({ Component, pageProps }: AppProps) {
       </Layout>
     </ThemeProvider>
     
-    
   )
 }
+
+
+          {/* for textScroll */}
+          {/* <link rel="stylesheet" href="https://use.typekit.net/zda3gdw.css" /> */}
+          {/* <link rel="stylesheet" type="text/css" href="../animation/textScroll.css" /> */}
+          {/* <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script> */}
+          {/* <script type="text/javascript" src="../components/utils/headTextScrollScript.js"></script> */}
+          {/* <script src="//tympanus.net/codrops/adpacks/analytics.js"></script> */}

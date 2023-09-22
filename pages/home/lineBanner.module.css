@@ -19,53 +19,46 @@
 }
 .scroll_m_container > span {
   display: inline-block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 /* .scroll_container {
   flex: 0 -5rem auto;
 } */
 
-.brand_logo_container_hemisphere{
+.brand_logo_container_hemisphere,
+.brand_logo_container_seabots,
+.brand_logo_container_sbgsystems
+{
   border-radius: 50px;
   display: inline-flex;
   margin: 0 2rem;
   cursor: pointer;
   border: 1px solid #fff;
-  background-image: url('/images/Hemisphere.svg');
   background-size: 75%;
   background-repeat: no-repeat;
   background-position: center;
   min-width: 7.5rem;
   height: 2.5rem;
-}
-.brand_logo_container_seabots{
-  border-radius: 50px;
-  display: inline-flex;
-  margin: 0 2rem;
-  cursor: pointer;
-  border: 1px solid #fff;
-  background-image: url('/images/Seabots.svg');
-  background-size: 75%;
-  background-repeat: no-repeat;
-  background-position: center;
-  min-width: 7.5rem;
-  height: 2.5rem;
-  display: inline-block;
 }
 
-.brand_logo_container_sbgsystems{
-  border-radius: 50px;
-  display: inline-flex;
-  margin: 0 2rem;
-  cursor: pointer;
-  border: 1px solid #fff;
-  background-image: url('/images/SbgSystems.svg');
-  background-size: 75%;
-  background-repeat: no-repeat;
-  background-position: center;
-  min-width: 7.5rem;
-  height: 2.5rem;
-  display: inline-block;
+.brand_logo_container_hemisphere{
+  background-image: url('/images/Hemisphere.svg');
 }
+.brand_logo_container_seabots{
+  background-image: url('/images/Seabots.svg');
+}
+.brand_logo_container_sbgsystems{
+  background-image: url('/images/SbgSystems.svg');
+}
+
+@media (max-width: 1200px) {
+  .scroll_m_container {
+    padding: 1.5rem 0;
+  }
+}
+
 @keyframes scrollText {
   from {
     transform: translateX(0%);
