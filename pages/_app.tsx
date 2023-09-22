@@ -102,9 +102,11 @@ const theme = createTheme({
           fontSize: 21,
           fontFamily:'neue-haas-grotesk-display',
           color:'#fff',
+          boxShadow: 'none',
           textTransform: 'none',
           '&:hover': {
             borderColor:'#fff',
+            boxShadow: 'none',
             opacity:.5,
           }
         }
