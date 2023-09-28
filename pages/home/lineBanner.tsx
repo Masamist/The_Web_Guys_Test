@@ -41,13 +41,16 @@ const LineBanner = () => {
     <div>
       <div className={styles.line_banner_container}>
           <div className={styles.scroll_m_container}>
+
+            {/* Logos are wrong position */}
+
             { banners.map((item) => (            
               !item.cssStyle? (
                 <span key={item.key}>
-                <Typography variant='h2' sx={{ display: 'inline-block' }}>{item.title}</Typography>
+                <Typography variant='h2' sx={{ display: 'inline-block' }} >{item.title}</Typography>
                 </span> 
                 ) :(
-                  <span key={item.key} className={styles[item.cssStyle]}>hahaha</span>
+                  <span key={item.key} className={styles[item.cssStyle]}>No images</span>
                 )            
             ))}
           </div>
