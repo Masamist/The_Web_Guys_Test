@@ -1,24 +1,14 @@
-/***** Slide Left *****/
-.slide_left {
-  animation: 3s slide-left;
-}
-@keyframes slide_left {
-  from {
-    margin-left: 100%;
-  }
-  to {
-    margin-left: 0%;
-  }
+.draggableContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
 }
 
-.fade-in {
-  animation: fadeIn ease 3s;
+.draggableContainer::-webkit-scrollbar {
+  display: none;
 }
-@keyframes fadeIn{
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
+.draggableContainer div{
+  margin-right: 1rem;
 }
+

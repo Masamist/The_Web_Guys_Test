@@ -11,13 +11,13 @@ import Button from '@mui/material/Button'
 
 function CardNews(props) {
   return (
-  <Card sx={{ width: {xs:'25rem', md:'25rem', xl:'32rem'} }}>
+  <Card sx={{ width: {xs:'25rem', md:'27rem', xl:'32rem'}, height:{ xs:'30rem', xs:'35rem', xl:'40rem'} }}>
     <CardMedia
       component="img"
       alt="news"
       image={props.url}
       sx={{
-        height: {xs:'17rem', md:'25rem'},
+        height: {xs:'17rem', md:'20rem', xl:'25rem'},
         padding: 3.5,
       }}
     />
